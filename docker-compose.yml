@@ -1,0 +1,13 @@
+version: '4.34.2'
+
+services:
+  db-ingestion-1:
+    image: mysql:8.0
+    container_name: db_servidor
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'banco_pessoas'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+   
